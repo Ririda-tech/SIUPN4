@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========================= -->
+    <!-- BASE STYLES -->
+    <!-- ========================= -->
+
+    <style name="Text" />
+    <style name="Card" />
+    <style name="Button" />
+
+    <!-- ========================= -->
+    <!-- TYPOGRAPHY -->
+    <!-- ========================= -->
+
+    <style name="Text.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Text.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Text.White">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- ========================= -->
+    <!-- CARD STYLE -->
+    <!-- ========================= -->
+
+    <style name="Card.Clean">
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/secondary</item>
+    </style>
+
+    <!-- ========================= -->
+    <!-- BUTTON STYLE (optional) -->
+    <!-- ========================= -->
+
+    <style name="Button.Primary">
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

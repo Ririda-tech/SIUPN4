@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Base.Theme.SIUPN" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#2e5f3a</item>
+        <item name="colorSecondary">#eef5eb</item>
+        <item name="android:statusBarColor">#2e5f3a</item>
+    </style>
+
+    <style name="Theme.SIUPN" parent="Base.Theme.SIUPN" />
+
+    <style name="Theme.SIUPN.Splash" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/splash_bg</item>
+    </style>
+
+</resources>
