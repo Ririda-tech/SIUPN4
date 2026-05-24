@@ -9,4 +9,9 @@
     <color name="green_soft">#4CAF50</color>
     <color name="text_primary">#2E2E2E</color>
     <color name="text_secondary">#757575</color>
+    <color name="pipi">#1D4D36</color>
+    <color name="pipi_secondary">#F4F7F3</color>
+    <color name="pipi_dark">#163828</color>
+    <color name="pipi_soft">#EAF4EC</color>"
+    <color name="gray">#7A7A7A</color>
 </resources>

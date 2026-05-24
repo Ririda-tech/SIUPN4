@@ -1,24 +1,33 @@
 package com.siupn.app.homepage
 
-class MainActivity : androidx.appcompat.app.AppCompatActivity() {
+import android.content.Intent
+import android.os.Bundle
+import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
+import com.siupn.app.R
 
-    override fun onCreate(savedInstanceState: android.os.Bundle?) {
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _root_ide_package_.androidx.appcompat.app.AppCompatActivity.setContentView(
-            _root_ide_package_.com.siupn.app.R.layout.activity_main
-        )
+        setContentView(R.layout.activity_main)
 
-        val menuLayout =
-            _root_ide_package_.androidx.appcompat.app.AppCompatActivity.findViewById<android.view.View>(
-                _root_ide_package_.com.siupn.app.R.id.menu
-            )
+        // MENU RUANGAN
+        val menuRuangan =
+            findViewById<LinearLayout>(R.id.menu3)
 
-        val menuKantin = menuLayout.findViewById<android.widget.LinearLayout>(_root_ide_package_.com.siupn.app.R.id.menu2)
+        menuRuangan.setOnClickListener {
 
-        menuKantin.setOnClickListener {
             val intent =
-                _root_ide_package_.android.content.Intent(this, MenuListActivity::class.java)
+                Intent(
+                    this,
+                    ListFakultasActivity::class.java
+                )
+
             startActivity(intent)
+
         }
+
     }
+
 }

@@ -112,7 +112,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_menu"
                 android:padding="14dp"
-                android:src="@drawable/ic_kantin"
+                android:src="@drawable/ic_peminjaman"
                 android:tint="@color/green_soft"/>
 
         </androidx.cardview.widget.CardView>

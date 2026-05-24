@@ -24,6 +24,11 @@
             android:exported="false"/>
         <activity android:name=".MenuListActivity"/>
         <activity android:name=".FoodDetailActivity"/>
+        <activity android:name=".homepage.ListFakultasActivity"/>
+        <activity
+            android:name=".homepage.GedungActivity"/>
+        <activity
+            android:name=".homepage.DetailRuanganActivity"/>
 
 
     </application>

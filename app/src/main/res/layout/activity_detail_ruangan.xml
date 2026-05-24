@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:background="@color/pipi_secondary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Detail Ruangan"
+                android:textSize="30sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/pipi_dark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+
+                android:text="Informasi lengkap peminjaman gedung dan fasilitas"
+                android:textSize="15sp"
+
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+        <!-- MAIN CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            app:cardCornerRadius="30dp"
+            app:cardElevation="6dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#EEEEEE"
+
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <!-- IMAGE -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:src="@drawable/ic_gedung"
+                        android:scaleType="centerCrop"/>
+
+                    <!-- OVERLAY -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="#33000000"/>
+
+                    <!-- STATUS -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Tersedia"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+
+                        android:textColor="@android:color/white"
+
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"
+
+                        android:layout_margin="18dp"/>
+
+                </FrameLayout>
+
+                <!-- CONTENT -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:padding="22dp">
+
+                    <!-- TITLE -->
+
+                    <!-- SUBTITLE -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Gedung Dewi Sartika"
+                        android:textColor="@color/pipi_dark"
+                        android:textSize="26sp"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+
+                            android:src="@drawable/ic_gedung"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text=" Fakultas Ilmu Komputer"
+                            android:textColor="@color/gray"
+
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <!-- INFO CARD -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+
+                        android:layout_marginTop="24dp">
+
+                        <!-- KAPASITAS -->
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+
+                            app:cardBackgroundColor="#F7F7F7">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="👥 Kapasitas"
+                                    android:textStyle="bold"
+
+                                    android:textColor="@color/pipi_dark"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="40 - 50 Orang"
+                                    android:textSize="15sp"
+
+                                    android:layout_marginTop="8dp"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- LANTAI -->
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+
+                            app:cardBackgroundColor="#F7F7F7">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="vertical"
+                                android:padding="16dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="🏢 Lantai"
+                                    android:textStyle="bold"
+
+                                    android:textColor="@color/pipi_dark"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Lt. 3"
+                                    android:textSize="15sp"
+
+                                    android:layout_marginTop="8dp"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <!-- RUANGAN -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Ruangan Tersedia"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/pipi_dark"
+
+                        android:layout_marginTop="28dp"/>
+
+                    <!-- CHIP ROOM -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="14dp"
+
+                        android:orientation="vertical">
+
+                        <!-- ROW 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="FIK 301"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/pipi"
+
+
+                                android:paddingHorizontal="18dp"
+                                android:paddingVertical="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="FIK 303"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/pipi"
+
+                                android:layout_marginStart="12dp"
+
+
+                                android:paddingHorizontal="18dp"
+                                android:paddingVertical="12dp"/>
+
+                        </LinearLayout>
+
+                        <!-- ROW 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal"
+
+                            android:layout_marginTop="12dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="FIK 302"
+                                android:textStyle="bold"
+
+                                android:textColor="@color/pipi"
+
+                                android:paddingHorizontal="18dp"
+                                android:paddingVertical="12dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- FASILITAS -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Fasilitas"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/pipi_dark"
+
+                        android:layout_marginTop="30dp"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="12dp"
+
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="0dp"
+
+                        app:cardBackgroundColor="#FAFAFA">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="18dp"
+
+                            android:text="✓ AC\n✓ Proyektor\n✓ PC/Komputer\n✓ WiFi\n✓ Smart TV"
+                            android:textSize="15sp"
+
+                            android:lineSpacingExtra="8dp"/>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- BUTTON -->
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+
+                        android:text="Pinjam Ruangan"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+
+                        android:textColor="@android:color/white"
+
+                        android:layout_marginTop="32dp"
+
+                        android:backgroundTint="@color/pipi"
+
+                        app:cornerRadius="18dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
